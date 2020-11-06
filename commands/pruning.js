@@ -16,7 +16,6 @@ module.exports = {
 
     fs.writeFile("./config.json", JSON.stringify(config, null, 2), (err) => {
       if (err) {
-        console.log(err);
         return message.channel.send("Hubo un error al actualizar la configuración.").catch(console.error);
       }
 
